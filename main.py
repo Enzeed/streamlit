@@ -27,8 +27,8 @@ if uploaded_file is not None:
     st.write(filtered_df)
 
     st.subheader("Plot Data")
-    x_column = st.selectbox("Select X Axis C olumn", kolom)
-    y_column = st.selectbox("Select Y Axis C olumn", kolom)
+    x_column = st.selectbox("Select X Axis Column", kolom)
+    y_column = st.selectbox("Select Y Axis Column", kolom)
 
     if st.button("Generate Plot"):
         st.line_chart(filtered_df.set_index(x_column)[y_column])
